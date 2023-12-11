@@ -1,2 +1,4 @@
-﻿<img alt="@($"{NameMapper.Instance[Name]}")" src="@($"/icons/{NameMapper.Instance[Name]}.svg")" width="@SizeInPixel" height="@SizeInPixel" 
+﻿@* <img alt="@($"{NameMapper.Instance[Icon]}")" src="@($"/icons/{TypeText}/{NameMapper.Instance[Icon]}.svg")" width="@SizeInPixel" height="@SizeInPixel" *@
+@*      style="margin-right: @MarginRightInPixel; display: inline-flex; justify-content: center; align-items: center"/> *@
+<img alt="@($"{NameMapper.Instance[Icon]}")" src="@($"_content/DevexpressIcon/icons/{TypeText}/{NameMapper.Instance[Icon]}.svg")" width="@SizeInPixel" height="@SizeInPixel"
      style="margin-right: @MarginRightInPixel; display: inline-flex; justify-content: center; align-items: center"/>

@@ -2,6 +2,9 @@ using DevexpressIconWrapper.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.UseWebRoot("wwwroot");
+builder.WebHost.UseStaticWebAssets();
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();

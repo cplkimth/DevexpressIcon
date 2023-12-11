@@ -3,9 +3,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="wwwroot\**\*" />
+		<Content Update="**\*.cshtml" Pack="false" />
+	</ItemGroup>
 </Project>
